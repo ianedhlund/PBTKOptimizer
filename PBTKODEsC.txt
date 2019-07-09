@@ -1,0 +1,18 @@
+dc_ART_/dt = (c_VEN_/p_Vblood_*p_Qc_)+(p_Qw_*p_Water_)-(c_ART_/p_Vblood_*p_Qp_)-(c_ART_/p_Vblood_*p_Qk_)-(c_ART_/p_Vblood_*p_Ql_)-(c_ART_/p_Vblood_*p_Qr_)-(c_ART_/p_Vblood_*p_Qb_)-(c_ART_/p_Vblood_*p_Qg_)-(c_ART_/p_Vblood_*p_Qf_)
+
+dc_B_/dt = (c_ART_/p_Vblood_*p_Qb_)-((c_B_*p_Qb_)/(p_Vb_*p_Pb_))
+
+dc_P_/dt = (c_ART_/p_Vblood_*p_Qp_)-(((c_P_*p_Qp_)/(p_Vp_*p_Pp_))*(1-p_Qpk_))-(((c_P_*p_Qp_)/(p_Vp_*p_Pp_))*p_Qpk_)
+
+dc_F_/dt = (c_ART_/p_Vblood_*p_Qf_)-((c_F_*p_Qf_)/(p_Vf_*p_Pf_))
+
+dc_G_/dt = (c_ART_/p_Vblood_*p_Qg_)-((c_G_*p_Qg_)/(p_Vg_*p_Pg_))
+
+dc_VEN_/dt = ((c_L_*(p_Ql_+p_Qr_))/(p_Vl_*p_Pl_))+((c_G_*p_Qg_)/(p_Vg_*p_Pg_))+((c_K_*(p_Qk_+(p_Qp_*p_Qpk_)))/(p_Vk_*p_Pk_))+(((c_P_*p_Qp_)/(p_Vp_*p_Pp_))*(1-p_Qpk_))+((c_F_*p_Qf_)/(p_Vf_*p_Pf_))+((c_B_*p_Qb_)/(p_Vb_*p_Pb_))-(c_VEN_/p_Vblood_*p_Qc_)-(p_Qw_*(c_VEN_/p_Vblood_)/p_Pbw_)
+
+dc_L_/dt = (c_ART_/p_Vblood_*p_Ql_)+((c_R_*p_Qr_)/(p_Vr_*p_Pr_))-((c_L_*(p_Ql_+p_Qr_))/(p_Vl_*p_Pl_))-(c_L_/(p_Vl_*p_Pl_)*p_Kl_)
+
+dc_R_/dt = (c_ART_/p_Vblood_*p_Qr_)-((c_R_*p_Qr_)/(p_Vr_*p_Pr_))-(c_R_/(p_Vr_*p_Pr_)*p_Kr_)
+
+dc_K_/dt = (c_ART_/p_Vblood_*p_Qk_)+(((c_P_*p_Qp_)/(p_Vp_*p_Pp_))*p_Qpk_)-((c_K_*(p_Qk_+(p_Qp_*p_Qpk_)))/(p_Vk_*p_Pk_))-(c_K_/(p_Vk_*p_Pk_)*p_Kk_)
+
